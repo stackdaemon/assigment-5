@@ -65,3 +65,15 @@ document.getElementById('clear_btn').addEventListener('click',function(){
 })
 
 
+//---------------copy
+const allCopy=document.getElementsByClassName('Copy_btn');
+for(let copy of allCopy){
+     const copyTitle=copy.parentNode.parentNode.children[1].children[0].innerText
+     copy.addEventListener('click',function(){
+          const num=getElemtnt('copy').innerText;
+          const currentNum=Number(num) +1;
+          getElemtnt('copy').innerText=currentNum;
+          navigator.clipboard.writeText(copyTitle);
+          alert(`Copied Number : ${copyTitle}`)
+     });
+}
