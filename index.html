@@ -25,7 +25,7 @@
     <header class="">
       <!-- ! nav Container -->
       <nav
-        class="flex justify-between items-center shadow-md py-5 px-20 bg-white"
+        class="flex justify-between items-center  py-5 px-20 bg-white"
       >
         <!--* nav left -->
         <div class="flex justify-center items-center gap-2">
@@ -45,7 +45,7 @@
           <div
             class="bg-[#41ff6b1a] flex justify-center items-center gap-2 rounded-full py-2 px-8"
           >
-            <span class="text-xl font-bold">0</span>
+            <span id="love" class="text-xl font-bold">0</span>
             <img
               class="w-[30px] h-[30px] inline"
               src="./assets/heart.png"
@@ -56,7 +56,7 @@
           <div
             class="bg-[#41ff6b1a] flex justify-center items-center gap-1 rounded-full py-2 px-5"
           >
-            <span class="text-xl font-bold mr-1">100</span>
+            <span id="coin" class="text-xl font-bold mr-1">100</span>
             <img
               class="w-[30px] h-[30px] inline"
               src="./assets/coin.png"
@@ -67,8 +67,8 @@
           <div
             class="bg-[#00A63E] flex justify-center items-center gap-2 rounded-full py-3 px-5 text-white"
           >
-            <span>2</span>
-            <p>Copy</p>
+            <span class="text-lg" id="copy">0</span>
+            <p class="text-lg">Copy</p>
           </div>
         </div>
       </nav>
@@ -76,9 +76,9 @@
     <main>
       <section id="Hero section w-10/12 mx-auto  ">
         <div
-          class="mx-auto flex justify-center items-center flex-col py-6 bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]"
+          class="mx-auto flex justify-center items-center flex-col py-4 bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]"
         >
-          <img class="w-[92px] h-[92px]" src="./assets/logo.png" alt="" />
+          <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="" />
           <h1 class="text-[40px] font-bold text-white">
             Emergency Service Directory
           </h1>
@@ -99,7 +99,7 @@
           <div class="gridKorbo grid grid-cols-3 gap-5">
             <!--! Card Number 1 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md">
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg">
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -107,12 +107,12 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
                 <div class="mt-4">
-                  <h2 class="font-bold text-2xl">National Emergency Number</h2>
+                  <h2 id="h2" class="font-bold text-2xl">National Emergency Number</h2>
                   <p class="font-regular text-lg text-[#5c5c5c]">
                     National Emergency
                   </p>
@@ -127,14 +127,14 @@
                   </p>
                 </div>
                 <!-- Call  -->
-                <div class="flex mx-auto justify-center flex-1 gap-5 mt-6">
-                  <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                <div class="flex mx-auto justify-center  gap-5 mt-6">
+                  <button 
+                    class="Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
-                  <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                  <button id="call"
+                    class="call_btn bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer "
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -142,7 +142,7 @@
               </div>
             </div>
             <!--! Card Number 2 -->
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md">
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg">
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -150,7 +150,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -169,13 +169,13 @@
                 </div>
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
-                  <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                  <button 
+                    class=" Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -184,7 +184,7 @@
             </div>
             <!--! Card Number 3 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md">
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg">
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -192,12 +192,12 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
                 <div class="mt-4">
-                  <h2 class="font-bold text-2xl">Fire Service Numberr</h2>
+                  <h2 class="font-bold text-2xl">Fire Service Number</h2>
                   <p class="font-regular text-lg text-[#5c5c5c]">
                     Fire Service
                   </p>
@@ -213,13 +213,13 @@
                 </div>
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
-                  <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                  <button 
+                    class="Copy_btn border-1 border-gray-300 py-2 flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -228,7 +228,7 @@
             </div>
             <!--! Card Number 4 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md">
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg">
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -236,7 +236,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -256,12 +256,12 @@
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
                   <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                    class=" Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
-                  <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                  <button 
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -270,7 +270,7 @@
             </div>
             <!--! Card Number 5 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md"> 
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg"> 
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -278,7 +278,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -299,13 +299,13 @@
                 </div>
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
-                  <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                  <button 
+                    class="Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -314,7 +314,7 @@
             </div>
             <!--! Card Number 6 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md"> 
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg"> 
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -322,7 +322,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -343,22 +343,22 @@
                 </div>
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
-                  <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                  <button 
+                    class=" Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
-              </div>
+               </div>
             </div>
             <!--! Card Number 7 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md"> 
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg"> 
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -366,7 +366,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart" ></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -388,12 +388,12 @@
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
                   <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                    class=" Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]  w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white]  w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -402,7 +402,7 @@
             </div>
             <!--! Card Number 8 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md">
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg">
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -410,7 +410,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -432,12 +432,12 @@
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
                   <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                    class=" Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -446,7 +446,7 @@
             </div>
             <!--! Card Number 9 -->
 
-            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-md"> 
+            <div class="Bacgroundcolo whihe bg-white p-8 rounded-lg shadow-lg"> 
               <!-- image -->
               <div class="flex justify-between items-center">
                 <img
@@ -454,7 +454,7 @@
                   alt=""
                   class="w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl"
                 />
-                <span><i class="fa-regular fa-heart text-[30px]"></i></span>
+                <span><i class="fa-regular fa-heart text-[30px] heart"></i></span>
               </div>
               <!-- title -->
               <div class="titlebody">
@@ -476,12 +476,12 @@
                 <!-- Call  -->
                 <div class="flex mx-auto justify-center gap-5 mt-6">
                   <button
-                    class="border-1 border-gray-300 py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c]"
+                    class=" Copy_btn border-1 border-gray-300 py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[#5c5c5c] w-full cursor-pointer"
                   >
                     <i class="fa-regular fa-copy"></i> Copy
                   </button>
-                  <button
-                    class="bg-[#00A63E] py-2 px-[38px] flex justify-center items-center gap-3 rounded-lg text-xl text-[white]"
+                  <button 
+                    class="bg-[#00A63E] py-2  flex justify-center items-center gap-3 rounded-lg text-xl text-[white] w-full cursor-pointer call_btn"
                   >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
@@ -491,8 +491,23 @@
           </div>
         </section>
 
-        
+        <aside class="bg-white rounded-xl col-span-3 shadow-lg">
+          <div class="p-8 flex justify-between items-center">
+            <h4 class="font-semibold text-xl">
+              <i class="fa-solid fa-clock-rotate-left"></i> Call History
+            </h4>
+            <button id="clear_btn"
+              class="font-semibold text-xl cursor-pointer text-white py-3 px-8 bg-[#00A63E] rounded-full"
+            >
+              Clear
+            </button>
+          </div>
+          <div id="card_container">
+               
+          </div>
+        </aside>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
