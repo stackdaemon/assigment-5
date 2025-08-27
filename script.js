@@ -58,3 +58,10 @@ for (const call of allCall) {
   });
 }
 
+//---------------------- clear btn
+document.getElementById('clear_btn').addEventListener('click',function(){
+     const card_prent = getElemtnt("card_container");
+     card_prent.innerHTML="";
+})
+
+
