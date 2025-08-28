@@ -37,6 +37,7 @@ for (const call of allCall) {
       alert(
         "❌ You don't have enough conins! You need at least 20 coins to make a call."
       );
+      return;
     }
 
     const card_prent = getElemtnt("card_container");
@@ -44,11 +45,11 @@ for (const call of allCall) {
     new_card.innerHTML = `
           <div class=" flex items-center justify-between m-8 py-5  px-3 rounded-lg bg-[#FAFAFA] ">
                     <div >
-                         <h2 class="font-bold text-2xl max-sm:text-xl">${callTitale}</h2>
-                         <h3 class="font-bold text-lg text-[#5C5C5C]">${callNumber}</h3>
+                         <h2 class="font-bold text-2xl max-sm:text-lg">${callTitale}</h2>
+                         <h3 class="font-bold text-lg text-[#5C5C5C] ">${callNumber}</h3>
                     </div>
                     <div>
-                         <h4 class="text-lg font-semibold">${new Date().toLocaleTimeString()}</h4>
+                         <h4 class="text-lg font-semibold max-sm:text-sm">${new Date().toLocaleTimeString()}</h4>
                          
                     </div>
                </div>
